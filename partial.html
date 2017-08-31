@@ -1,0 +1,14 @@
+<article class="product-list">
+	
+	<header><h1>List of Mushrooms</h1></header>
+
+	<section>
+		<div ng-repeat="item in shroom | filter : taco | filter : edible">
+			<a href="#/item/{{item.name}}"><h3>{{item.name}}</h3></a>
+			<a href="#/item/{{item.name}}"><h3>{{item.edible}}</h3></a>
+			<a href="#/item/{{item.description}}">{{item.description}}</a><br><br>
+		</div>
+	</section>
+
+
+</article>
